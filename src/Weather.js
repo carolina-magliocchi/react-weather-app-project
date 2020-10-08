@@ -3,9 +3,9 @@ import "./Weather.css";
 import NavigationBar from "./NavigationBar";
 import MainSection from "./MainSection";
 
-export default function WeatherApp() {
+export default function Weather() {
   return (
-    <div className="WeatherApp">
+    <div className="Weather">
       <NavigationBar />
       <MainSection />
     </div>

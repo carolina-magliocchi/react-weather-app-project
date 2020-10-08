@@ -22,7 +22,7 @@ nav {
 .form-control::-webkit-input-placeholder {
   color: #1e56a0;
 }
-button.btn-primary {
+button {
   color: white;
   background: #1e56a0;
   border: 1px solid #1e56a0;
@@ -38,7 +38,7 @@ button.btn-primary {
   border-radius: 0.25rem;
   transition: all 200ms ease-in-out;
 }
-button.btn-primary:hover {
+button:hover {
   color: #1e56a0;
   background: white;
   border-color: #1e56a0;

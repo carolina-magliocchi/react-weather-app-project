@@ -1,22 +1,23 @@
 import React from "react";
 import "./NavigationBar.css";
+import { Navbar, Form, FormControl, Button } from "react-bootstrap";
 
 export default function NavigationBar() {
   return (
     <div className="NavigationBar">
-      <nav className="navbar navbar-light">
-        <form className="form-inline">
-          <input
-            className="form-control mr-sm-2"
+      <Navbar className="nav" bg="light" variant="light">
+        <Form inline>
+          <FormControl
             type="search"
             placeholder="Enter a city"
+            className="mr-sm-2 form-control"
             aria-label="Enter a city"
           />
-          <button className="btn btn-primary" type="submit">
+          <Button variant="outline-primary" type="submit">
             Search
-          </button>
-        </form>
-      </nav>
+          </Button>
+        </Form>
+      </Navbar>
     </div>
   );
 }

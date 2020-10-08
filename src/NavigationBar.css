@@ -1,0 +1,46 @@
+nav {
+  margin-top: 10px;
+  margin-bottom: 40px;
+  padding: 0 !important;
+  background-color: transparent;
+  text-align: left;
+}
+.form-control {
+  color: #1e56a0;
+  border: 1px solid #1e56a0;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: #fff;
+  border-radius: 0.25rem;
+  text-align: left;
+  vertical-align: middle;
+  transition: all 200ms ease-in-out;
+  width: auto;
+}
+.form-control::-webkit-input-placeholder {
+  color: #1e56a0;
+}
+button.btn-primary {
+  color: white;
+  background: #1e56a0;
+  border: 1px solid #1e56a0;
+  display: inline-block;
+  margin: 0;
+  margin-left: 8px;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: all 200ms ease-in-out;
+}
+button.btn-primary:hover {
+  color: #1e56a0;
+  background: white;
+  border-color: #1e56a0;
+  cursor: pointer;
+}

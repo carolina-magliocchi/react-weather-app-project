@@ -1,0 +1,8 @@
+.WeatherApp {
+  border: 1px solid #1e56a0;
+  border-radius: 0.25rem;
+  padding: 20px;
+  margin: 20px auto;
+  width: 600px;
+  background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+}

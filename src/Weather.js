@@ -1,5 +1,5 @@
 import React from "react";
-import "./WeatherApp.css";
+import "./Weather.css";
 import NavigationBar from "./NavigationBar";
 import MainSection from "./MainSection";
 

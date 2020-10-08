@@ -26,40 +26,41 @@ export default function MainSection() {
       </p1>
       <br />
       <p2>{weatherData.time}</p2>
-
-      <Container>
-        <Row className="selected-city">
-          <Col>
-            <img
-              className="weather-icon"
-              src={weatherData.icon}
-              alt={weatherData.description}
-            />
-          </Col>
-          <Col>
-            <div className="weather-temperature">
-              <span className="temperature">{weatherData.temperature}</span>
-              <span className="units">
-                <a href="/">°C</a> | <a href="/">°F</a>
-              </span>
-            </div>
-          </Col>
-          <Col>
-            <ul>
-              <li>
-                <span className="description">{weatherData.description}</span>
-              </li>
-              <li>
-                Humidity:{" "}
-                <span className="humidity">{weatherData.humidity}</span>%
-              </li>
-              <li>
-                Wind: <span className="wind">{weatherData.wind}</span>km/h
-              </li>
-            </ul>
-          </Col>
-        </Row>
-      </Container>
+      <div className="selected-city">
+        <Container>
+          <Row>
+            <Col md={3}>
+              <img
+                className="weather-icon"
+                src={weatherData.icon}
+                alt={weatherData.description}
+              />
+            </Col>
+            <Col md={3}>
+              <div className="weather-temperature">
+                <span className="temperature">{weatherData.temperature}</span>
+                <span className="units">
+                  <a href="/">°C</a> | <a href="/">°F</a>
+                </span>
+              </div>
+            </Col>
+            <Col md={6}>
+              <ul>
+                <li>
+                  <span className="description">{weatherData.description}</span>
+                </li>
+                <li>
+                  Humidity:{" "}
+                  <span className="humidity">{weatherData.humidity}</span>%
+                </li>
+                <li>
+                  Wind: <span className="wind">{weatherData.wind}</span>km/h
+                </li>
+              </ul>
+            </Col>
+          </Row>
+        </Container>
+      </div>
     </div>
   );
 }

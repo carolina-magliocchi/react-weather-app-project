@@ -9,7 +9,7 @@ export default function App() {
         <WeatherApp />
         <p4>
           <a
-            href="https://github.com/carolina-magliocchi/weather-app"
+            href="https://github.com/carolina-magliocchi/react-weather-app-project"
             alt="github-link"
             target="_blank"
             rel="noopener noreferrer"

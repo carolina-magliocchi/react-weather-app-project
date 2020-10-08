@@ -1,28 +1,5 @@
-.selected-city {
+div.selected-city {
   margin-top: 30px;
-}
-h1 {
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: left;
-  font-size: 2.5rem;
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-  font-weight: 500;
-  line-height: 1.2;
-}
-p1 {
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: left;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-}
-p2 {
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: left;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
 }
 img.weather-icon {
   height: 100px;
@@ -44,9 +21,4 @@ span.units {
 ul {
   list-style: none;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  text-align: left;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
 }

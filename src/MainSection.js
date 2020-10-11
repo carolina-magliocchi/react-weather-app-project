@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "./MainSection.css";
 import FormattedDate from "./FormattedDate";
 import axios from "axios";
+import Loader from "react-loader-spinner";
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 
 export default function MainSection() {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -66,6 +68,6 @@ export default function MainSection() {
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
 
-    return "Loading...";
+    return <Loader type="ThreeDots" color="#1e56a0" height={80} width={80} />;
   }
 }

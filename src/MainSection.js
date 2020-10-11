@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./MainSection.css";
+import FormattedDate from "./FormattedDate";
 import axios from "axios";
 
 export default function MainSection() {
@@ -9,9 +10,7 @@ export default function MainSection() {
       ready: true,
       city: response.data.name,
       country: response.data.sys.country,
-      weekDay: "Monday",
-      date: "14/09",
-      time: "12:00",
+      date: new Date(response.data.dt * 1000),
       icon: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
       temperature: Math.round(response.data.main.temp),
       description: response.data.weather[0].description,
@@ -25,11 +24,7 @@ export default function MainSection() {
         <h1>
           {weatherData.city}, {weatherData.country}
         </h1>
-        <p1>
-          {weatherData.weekDay}, {weatherData.date}
-        </p1>
-        <br />
-        <p2>{weatherData.time}</p2>
+        <FormattedDate date={weatherData.date} />
         <div className="row selected-city">
           <div className="col-6">
             <div className="clearfix">

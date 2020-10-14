@@ -1,9 +1,7 @@
 div.selected-city {
   margin-top: 30px;
 }
-img.weather-icon {
-  height: 100px;
-  width: 100px;
+canvas.weather-icon {
   margin-right: 20px;
   line-height: 1;
   position: relative;

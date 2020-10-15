@@ -5,6 +5,7 @@
 
 .WeatherForecast canvas {
   display: block;
-  height: 30;
-  width: 30;
+  height: 20;
+  width: 20;
+  padding: 0;
 }

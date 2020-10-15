@@ -5,7 +5,7 @@ import WeatherContent from "./WeatherContent";
 export default function WeatherApp() {
   return (
     <div className="WeatherApp">
-      <WeatherContent />
+      <WeatherContent defaultCity="Paris" />
     </div>
   );
 }

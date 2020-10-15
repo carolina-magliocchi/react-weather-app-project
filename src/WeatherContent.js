@@ -17,10 +17,10 @@ function handleResponse(response) {
       country: response.data.sys.country,
       date: new Date(response.data.dt * 1000),
       icon: response.data.weather[0].icon,
-      temperature: Math.round(response.data.main.temp),
+      temperature: response.data.main.temp,
       description: response.data.weather[0].description,
-      humidity: Math.round(response.data.main.humidity),
-      wind: Math.round(response.data.wind.speed),
+      humidity: response.data.main.humidity,
+      wind: response.data.wind.speed,
     });
   }
 

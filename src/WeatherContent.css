@@ -21,3 +21,7 @@ button.btn-primary:hover {
   background: white;
   border-color: #1e56a0;
 }
+hr {
+  background-color: #1e56a0;
+  margin-bottom: 20px;
+}

@@ -4,6 +4,7 @@ import axios from "axios";
 import Loader from "react-loader-spinner";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import WeatherInfo from "./WeatherInfo";
+import WeatherForecast from "./WeatherForecast";
 
 export default function WeatherContent(props) {
   const [city, setCity] = useState (props.defaultCity);
@@ -56,6 +57,7 @@ if (weatherData.ready) {
         </form>
       </nav>
       <WeatherInfo data={weatherData}/>
+      <WeatherForecast city={weatherData.city} />
     </div>
   );
     } else {
